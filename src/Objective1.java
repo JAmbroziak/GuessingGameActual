@@ -23,6 +23,14 @@ public class Objective1 {
         while(guess != secret)
         {
             System.out.println("Sorry, try again.");
+            if(guess > secret)
+            {
+                System.out.println("Go lower.");
+            }
+            if(guess < secret)
+            {
+                System.out.println("Go higher.");
+            }
             guess = input.nextInt();
             guessCount++;
         }
